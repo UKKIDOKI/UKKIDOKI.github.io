@@ -16,6 +16,12 @@ module.exports = {
   ],
   plugins: [],
   rules: {
+    'vue/multi-word-component-names': [
+      'error',
+      {
+        ignores: ['main', 'index'],
+      },
+    ],
     'no-console': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
     'no-debugger': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
     'no-unused-vars': 'off',
