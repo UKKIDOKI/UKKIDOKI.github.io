@@ -18,7 +18,9 @@
     "@typescript-eslint/parser": "^6.5.0",
     "eslint": "^8.48.0",
     "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-nuxt": "^4.0.0",
     "eslint-plugin-prettier": "^5.0.0",
+    "eslint-plugin-vue": "^9.17.0",
     "nuxt": "^3.7.0",
     "prettier": "^3.0.2",
     "typescript": "^5.2.2"
@@ -31,6 +33,7 @@
     "@mdi/font": "^7.2.96",
     "sass": "^1.66.1",
     "sass-loader": "^13.3.2",
+    "vite-plugin-eslint": "^1.8.1",
     "vuetify": "^3.3.14"
   }
 }
