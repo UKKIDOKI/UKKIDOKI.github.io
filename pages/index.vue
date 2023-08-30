@@ -2,7 +2,7 @@
   <div>여기가 index 페이지입니다.</div>
   <v-btn>안녕</v-btn>
   테스트
-  <v-icon>mdi-close</v-icon>
+  <v-icon>mdi-closedadsa</v-icon>
 </template>
 
 <script setup lang="ts"></script>

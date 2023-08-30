@@ -13,8 +13,11 @@
     "lintfix": "prettier --write --list-different . && yarn lint:js --fix"
   },
   "devDependencies": {
+    "@nuxt/content": "^2.8.0",
     "@nuxt/devtools": "latest",
+    "@nuxt/types": "^2.17.1",
     "@nuxtjs/eslint-config-typescript": "^12.0.0",
+    "@types/node": "^20.5.7",
     "@typescript-eslint/parser": "^6.5.0",
     "eslint": "^8.48.0",
     "eslint-config-prettier": "^9.0.0",
@@ -31,6 +34,7 @@
   "license": "MIT",
   "dependencies": {
     "@mdi/font": "^7.2.96",
+    "@vueuse/core": "^10.4.1",
     "sass": "^1.66.1",
     "sass-loader": "^13.3.2",
     "vite-plugin-eslint": "^1.8.1",

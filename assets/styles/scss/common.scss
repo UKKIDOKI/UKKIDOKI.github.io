@@ -1,0 +1,30 @@
+@import './reset.scss';
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard-dynamic-subset.css');
+
+body {
+  background: var(--bg-white);
+  font-size: 16px;
+  font-weight: var(--font-medium);
+  line-height: 1.5;
+  color: var(--color-black);
+  font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
+
+  @include mobile {
+    font-size: 14px;
+  }
+}
+a, button {
+  color: var(--color-black);
+  &:hover {
+    opacity: 0.6;
+    transition: opacity 0.2s;
+  }
+}
+.ir {
+  overflow: hidden;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  font-size: 0;
+  opacity: 0;
+}

@@ -1,5 +1,7 @@
 <template>
-  <div>여기가 main 페이지입니다. 생성</div>
+  <TheContainer :size="'wide'">
+    <post-list />
+  </TheContainer>
 </template>
 <script setup lang="ts"></script>
 <style scoped></style>

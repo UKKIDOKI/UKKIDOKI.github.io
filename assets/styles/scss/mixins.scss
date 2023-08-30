@@ -1,0 +1,27 @@
+@mixin flexBox($al:center, $jc:center) {
+  display: flex;
+  align-items: $al;
+  justify-content: $jc;
+}
+
+@mixin pc {
+  @media screen and (min-width: ($mobile-size + 1)) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media screen and (max-width: $mobile-size) {
+    @content;
+  }
+}
+
+@mixin scrollDesign() {
+  &::-webkit-scrollbar {
+    width: 5px;
+    background-color: var(--bg-gray);
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: var(--line-gray);
+  }
+}
