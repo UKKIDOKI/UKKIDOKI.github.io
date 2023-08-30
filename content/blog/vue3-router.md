@@ -9,7 +9,7 @@ author: 'Sample Author'
 authorUrl: 'https://example.com/'
 keywords: ["Nuxt", "Vue", "Google Login", "JWT", "Access Token"]
 socialImage:
-    src: '/img/blog/sample.webp'
+    # src: '/img/blog/sample.webp'
     mime: 'webp'
     alt: 'Mountain'
     width: 1200
@@ -144,7 +144,7 @@ app.use(router).mount('#app')
 ```
 
 결과는 아래와 같습니다.
-<figure>
+<!-- <figure>
   <img src="/posts/images/vue3-dynamic-route-result-in-browser.jpg" alt="router params값 호출 화면">
   <figcaption><code>:title</code>로 지정한 부분이 <code>$route.params.title</code>로 불러와지고 있습니다.</figcaption>
-</figure>
+</figure> -->

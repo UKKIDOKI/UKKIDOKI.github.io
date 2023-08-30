@@ -9,7 +9,7 @@ author: 'Sample Author'
 authorUrl: 'https://example.com/'
 keywords: ["Nuxt", "Vue", "Google Login", "JWT", "Access Token"]
 socialImage:
-    src: '/img/blog/sample.webp'
+    # src: '/img/blog/sample.webp'
     mime: 'webp'
     alt: 'Mountain'
     width: 1200
