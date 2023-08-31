@@ -54,7 +54,7 @@ const props = defineProps({
       "There are no posts right now, but stay tuned for newer releases in the future.",
   },
 });
-const { $formatDate, $randomRgba } = useNuxtApp();
+const { $randomRgba } = useNuxtApp();
 </script>
 <style lang="scss" scoped>
 @import "@/assets/styles/scss/PostList.scss";

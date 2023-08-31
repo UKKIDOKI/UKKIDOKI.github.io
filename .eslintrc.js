@@ -6,11 +6,16 @@ module.exports = {
   },
   parser: "vue-eslint-parser",
   parserOptions: {
+    ecmaVersion: "latest",
     parser: "@typescript-eslint/parser",
+    sourceType: "module",
   },
   extends: [
-    "eslint:recommended",
+    "plugin:vue/vue3-essential",
+    "plugin:@typescript-eslint/recommended",
+    // "eslint:recommended",
     "plugin:nuxt/recommended",
+    "@vue/typescript/recommended",
     "plugin:vue/vue3-recommended",
     "plugin:prettier/recommended",
   ],
@@ -26,6 +31,8 @@ module.exports = {
     "no-console": process.env.NODE_ENV === "production" ? "warn" : "off",
     "no-debugger": process.env.NODE_ENV === "production" ? "warn" : "off",
     "no-unused-vars": "off",
+    "@typescript-eslint/no-explicit-any": "warn",
+    "@typescript-eslint/no-unused-vars": "warn",
     "prettier/prettier": [
       "error",
       {

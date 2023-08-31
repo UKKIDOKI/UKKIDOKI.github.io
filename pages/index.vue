@@ -1,9 +1,6 @@
 <template>
-  <div>여기가 index 페이지입니다.</div>
-  <v-btn>안녕</v-btn>
-  테스트
-  <v-icon>mdi-closedadsa</v-icon>
+  <div class="flex flex-col items-center justify-center" style="height: 100vh">
+    <h1 class="text-center">Welcome to the blog starter!</h1>
+    <NuxtLink to="/blog/">Read the blog!</NuxtLink>
+  </div>
 </template>
-
-<script setup lang="ts"></script>
-<style scoped></style>

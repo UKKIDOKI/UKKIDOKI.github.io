@@ -29,11 +29,12 @@
 </template>
 
 <script setup lang="ts">
-import { useNuxtApp } from "#imports";
+// import { useNuxtApp } from "#imports";
 import { ref, useRoute } from "#imports";
 import { useAsyncData } from "#imports";
 import { queryContent } from "#imports";
-const { $formatDate } = useNuxtApp();
+import { ParsedContent } from "@nuxt/content/dist/runtime/types";
+// const { $formatDate } = useNuxtApp();
 const route = useRoute();
 console.log(route.params.slug[0]);
 const articleReady = ref(true);
