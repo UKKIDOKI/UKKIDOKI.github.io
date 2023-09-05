@@ -1,21 +1,29 @@
-import { defineNuxtConfig } from "nuxt/config";
 import eslintPlugin from "vite-plugin-eslint";
-
-// nuxt.config.ts
 export default defineNuxtConfig({
-  imports: {
-    autoImport: true,
+  content: {
+    markdown: {
+      anchorLinks: false,
+      // 앵커 링크 비활성화
+    },
   },
-  modules: ["@nuxt/content"],
+  app: {
+    baseURL: "/",
+  },
+  modules: ["@nuxtjs/tailwindcss", "@nuxt/content"],
+  css: [
+    "/assets/styles/css/main.css",
+    "vuetify/lib/styles/main.sass",
+    "@mdi/font/css/materialdesignicons.min.css",
+  ],
   ssr: true,
   experimental: {
     payloadExtraction: false,
   },
-  // ...
-  css: [
-    "vuetify/lib/styles/main.sass",
-    "@mdi/font/css/materialdesignicons.min.css",
-  ],
+  router: {
+    options: {
+      strict: false,
+    },
+  },
   build: {
     transpile: ["vuetify"],
   },
@@ -32,30 +40,25 @@ export default defineNuxtConfig({
       "process.env.DEBUG": false,
     },
   },
-  router: {
-    options: {
-      strict: false,
-    },
-  },
+  nitro: {},
   sourcemap: false,
-  // ...
-  content: {
-    // https://content.nuxtjs.org/api/configuration
-    highlight: {
-      theme: "github-dark",
-      preload: ["java", "javascript"],
-    },
-    markdown: {
-      // https://github.com/rehypejs/rehype-external-links
-      rehypePlugins: [
-        [
-          "rehype-external-links",
-          {
-            target: "_blank",
-            rel: "noopener noreferer",
-          },
-        ],
-      ],
-    },
-  },
+  // content: {
+  //   // https://content.nuxtjs.org/api/configuration
+  //   highlight: {
+  //     theme: "github-dark",
+  //     preload: ["java", "javascript"],
+  //   },
+  //   markdown: {
+  //     // https://github.com/rehypejs/rehype-external-links
+  //     rehypePlugins: [
+  //       [
+  //         "rehype-external-links",
+  //         {
+  //           target: "_blank",
+  //           rel: "noopener noreferer",
+  //         },
+  //       ],
+  //     ],
+  //   },
+  // },
 });

@@ -1,10 +1,9 @@
 <template>
   <main id="main">
     <TheHeader />
-
-    <!-- <NuxtLayout> -->
-    <NuxtPage />
-    <!-- </NuxtLayout> -->
+    <NuxtLayout>
+      <NuxtPage />
+    </NuxtLayout>
     <TheFooter />
   </main>
 </template>
