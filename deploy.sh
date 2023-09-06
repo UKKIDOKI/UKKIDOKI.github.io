@@ -12,6 +12,7 @@ git push origin master
 yarn generate
 # navigate into the build output directory
 cd .output/public/
+# git page에 jekyll을 쓰지 않는다고 알려줌
 touch .nojekyll
 
 # if you are deploying to a custom domain
