@@ -7,7 +7,7 @@ export default defineNuxtConfig({
     },
   },
   app: {
-    baseURL: "/blog/",
+    baseURL: "/ukkidoki.github.io/blog/",
   },
 
   modules: [
