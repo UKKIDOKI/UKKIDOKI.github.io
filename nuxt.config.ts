@@ -9,7 +9,6 @@ export default defineNuxtConfig({
   // app: {
   //   baseURL: "/ukkidoki.github.io/",
   // },
-
   modules: [
     "@nuxtjs/tailwindcss",
     "@nuxt/content",
