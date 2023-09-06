@@ -12,6 +12,7 @@ git push origin master
 yarn generate
 # navigate into the build output directory
 cd .output/public/
+touch .nojekyll
 
 # if you are deploying to a custom domain
 # echo 'www.example.com' > CNAME
