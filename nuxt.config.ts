@@ -24,11 +24,11 @@ export default defineNuxtConfig({
   experimental: {
     payloadExtraction: false,
   },
-  router: {
-    options: {
-      strict: false,
-    },
-  },
+  // router: {
+  //   options: {
+  //     strict: false,
+  //   },
+  // },
   build: {
     // transpile: ["vuetify"],
   },
