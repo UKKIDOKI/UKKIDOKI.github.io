@@ -34,9 +34,7 @@
         <NavScrollTopIcon />
       </template>
       <!-- Error in case not found -->
-      <template #not-found>
-        <SectionsError />
-      </template>
+      <template #not-found> error </template>
     </ContentDoc>
   </TheContainer>
 </template>

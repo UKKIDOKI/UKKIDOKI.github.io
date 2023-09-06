@@ -8,8 +8,8 @@ export default defineNuxtPlugin(() => {
   };
 });
 
-export const randomRgba = (min, max, opacity = 1) => {
-  const randomNumber = (min, max) =>
+export const randomRgba = (min: number, max: number, opacity = 1) => {
+  const randomNumber = (min: number, max: number) =>
     Math.floor(Math.random() * (max - min + 1) + min);
   const randomByte = () => randomNumber(min, max);
   const randomCssRgba = `rgba(${[

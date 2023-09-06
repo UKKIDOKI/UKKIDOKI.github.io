@@ -9,7 +9,12 @@ export default defineNuxtConfig({
   app: {
     baseURL: "/",
   },
-  modules: ["@nuxtjs/tailwindcss", "@nuxt/content"],
+
+  modules: [
+    "@nuxtjs/tailwindcss",
+    "@nuxt/content",
+    "@invictus.codes/nuxt-vuetify",
+  ],
   css: [
     "/assets/styles/css/main.css",
     "vuetify/lib/styles/main.sass",
@@ -25,7 +30,7 @@ export default defineNuxtConfig({
     },
   },
   build: {
-    transpile: ["vuetify"],
+    // transpile: ["vuetify"],
   },
   vite: {
     css: {

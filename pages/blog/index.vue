@@ -1,27 +1,25 @@
 <template>
   <main>
-    <Section id="main" class="!pt-0">
-      <ContentQuery
-        v-slot="{ data }"
-        path="/blog"
-        :only="[
-          'headline',
-          'excerpt',
-          'date',
-          'tags',
-          '_path',
-          'image',
-          'author',
-          'keywords',
-        ]"
-        :sort="{
-          date: -1,
-        }"
-        :limit="'max'"
-      >
-        <BlogList :data="data" />
-      </ContentQuery>
-    </Section>
+    <ContentQuery
+      v-slot="{ data }"
+      path="/blog"
+      :only="[
+        'headline',
+        'excerpt',
+        'date',
+        'tags',
+        '_path',
+        'image',
+        'author',
+        'keywords',
+      ]"
+      :sort="{
+        date: -1,
+      }"
+      :limit="'max'"
+    >
+      <BlogList :data="data" />
+    </ContentQuery>
   </main>
 </template>
 

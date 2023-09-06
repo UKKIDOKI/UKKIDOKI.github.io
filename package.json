@@ -13,6 +13,7 @@
     "lintfix": "prettier --write --list-different . && yarn lint:js --fix"
   },
   "devDependencies": {
+    "@invictus.codes/nuxt-vuetify": "^0.3.0",
     "@nuxt/content": "^2.8.2",
     "@nuxt/devtools": "latest",
     "@nuxt/types": "^2.17.1",
