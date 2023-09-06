@@ -6,9 +6,9 @@ export default defineNuxtConfig({
       // 앵커 링크 비활성화
     },
   },
-  // app: {
-  //   baseURL: "/ukkidoki.github.io",
-  // },
+  app: {
+    baseURL: "/blog/",
+  },
 
   modules: [
     "@nuxtjs/tailwindcss",
