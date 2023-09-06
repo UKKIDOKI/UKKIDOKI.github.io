@@ -20,7 +20,7 @@ export default defineNuxtConfig({
     "vuetify/lib/styles/main.sass",
     "@mdi/font/css/materialdesignicons.min.css",
   ],
-  ssr: true,
+  ssr: false,
   experimental: {
     payloadExtraction: false,
   },
